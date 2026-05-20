@@ -1,0 +1,74 @@
+:root {
+  /* Default Neutral Theme Variables */
+  --bg-gradient: linear-gradient(135deg, #1e1e24 0%, #2b2b36 100%);
+  --app-bg: #121214;
+  --glass-bg: rgba(30, 30, 36, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0ab;
+  --accent-color: #6366f1; /* Indigo */
+  --accent-hover: #4f46e5;
+  --bot-msg-bg: rgba(255, 255, 255, 0.05);
+  --bot-msg-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="happy"] {
+  --bg-gradient: linear-gradient(135deg, #ffedd5 0%, #fdba74 100%);
+  --app-bg: #fff7ed;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --accent-color: #f97316; /* Orange */
+  --accent-hover: #ea580c;
+  --bot-msg-bg: rgba(253, 186, 116, 0.3);
+  --bot-msg-border: rgba(249, 115, 22, 0.2);
+}
+
+[data-theme="sad"] {
+  --bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+  --app-bg: #0f172a;
+  --glass-bg: rgba(30, 58, 138, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #3b82f6; /* Blue */
+  --accent-hover: #2563eb;
+  --bot-msg-bg: rgba(59, 130, 246, 0.15);
+  --bot-msg-border: rgba(59, 130, 246, 0.3);
+}
+
+[data-theme="angry"] {
+  --bg-gradient: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
+  --app-bg: #2a0800;
+  --glass-bg: rgba(127, 29, 29, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --text-primary: #fef2f2;
+  --text-secondary: #fca5a5;
+  --accent-color: #ef4444; /* Red */
+  --accent-hover: #dc2626;
+  --bot-msg-bg: rgba(239, 68, 68, 0.2);
+  --bot-msg-border: rgba(239, 68, 68, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--app-bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+/* Base styles for smooth transitions */
+div, button, input {
+  transition: background-color 0.8s ease, border-color 0.8s ease, color 0.8s ease, box-shadow 0.3s ease;
+}
